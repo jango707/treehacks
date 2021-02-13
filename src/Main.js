@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
+import treeGIF from './pics/tree.gif';
 import firebase from './util/firebase';
 import './main.css';
+
 
 class Main extends Component{
 
@@ -8,7 +10,8 @@ class Main extends Component{
         super(props);
         this.state = {
             snap: null,
-            loaded:false
+            loaded:false,
+            total: 0
         }
     }
 
@@ -17,9 +20,17 @@ class Main extends Component{
 
         //todoRef.push(todo);
         todoRef.on('value', (snapshot) => {
-            console.log(snapshot.val());
+            const snaps = snapshot.val();
+            console.log(snaps);
+            var t = 0;
+            Object.keys(snaps).map((item, index) => {
+                t+= snaps[item];
+            })
             this.setState({
-                snap: snapshot.val(),
+                total: t
+            })
+            this.setState({
+                snap: snaps,
                 loaded: true
             })
         })
@@ -37,7 +48,7 @@ class Main extends Component{
             return(
                 <div className="Homepage">
                     <h1>TreeHacks</h1>
-                        <table style={{width:'20%', marginLeft:'40%'}}>
+                        <table style={{width:'20%', marginLeft:'42%'}}>
                             <tr>
                                 <th>activity</th>
                                 <th>amount</th>
@@ -51,7 +62,13 @@ class Main extends Component{
                                 </tr>                                
                                 
                             ))}
+                                <tr>
+                                    <td ><b>total</b></td>
+                                    <td> <b>{this.state.total} Litres</b> </td>
+                                </tr>
                         </table>
+
+                        <img src={treeGIF} alt="Tree"/>
                 </div>
             )
         }
