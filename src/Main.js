@@ -13,7 +13,7 @@ class Main extends Component{
     }
 
     createTodo(){
-        const todoRef = firebase.database().ref('todo');
+        const todoRef = firebase.database().ref('water');
        
 
         //todoRef.push(todo);
@@ -25,7 +25,7 @@ class Main extends Component{
     render(){
         return(
             <div>
-                <button onClick={this.createTodo}>hello</button>
+                <button onClick={this.createTodo}>click</button>
             </div>
         )
     }
