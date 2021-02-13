@@ -1,12 +1,14 @@
-import logo from './logo.svg';
+import { FirebaseDatabaseProvider } from "@react-firebase/database";
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <p>
-        treehacks
-      </p>
+     <FirebaseDatabaseProvider>
+      <div>
+        This is my app
+      </div>
+    </FirebaseDatabaseProvider>
     </div>
   );
 }
