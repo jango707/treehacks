@@ -11,8 +11,10 @@ class Main extends Component{
         this.state = {
             snap: null,
             loaded:false,
-            total: 0
+            total: 0,
+            displayTimer: false
         }
+        this.onClick = this.onClick.bind(this);
     }
 
     componentDidMount(){
@@ -36,6 +38,12 @@ class Main extends Component{
         })
     }
 
+    onClick(){
+        this.setState({
+            displayTimer:true
+        })
+    }
+
     render(){
         if(!this.state.loaded){
             return(
@@ -46,6 +54,7 @@ class Main extends Component{
         }else{
             const snap = this.state.snap
             return(
+            <div> 
                 <div className="Homepage">
                     <h1>TreeHacks</h1>
                         <table style={{width:'20%', marginLeft:'42%'}}>
@@ -68,8 +77,17 @@ class Main extends Component{
                                 </tr>
                         </table>
 
-                        <img src={treeGIF} alt="Tree"/>
-                </div>
+                        <button onClick={this.onClick}
+                         style={{backgroundColor:'#a9d5ef', color:'#0055a6', border:'none'}}>Water the Tree</button>
+
+                         {this.state.displayTimer && <p style={{color:'red', fontSize:'20px'}}>Bucket will be full again tomorrow night</p>}
+
+                </div>  
+                
+                <img src={treeGIF} alt="Tree"/>
+                <img src="https://image.shutterstock.com/image-vector/clipart-style-cartoon-bucket-600w-34869622.jpg" 
+                width='400px' alt="bucket"/>
+            </div>
             )
         }
     }
