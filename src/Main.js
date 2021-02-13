@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import treeGIF from './pics/tree.gif';
 import firebase from './util/firebase';
 import './main.css';
+import ProgressBar from "./progress-bar.component"
 
 
 class Main extends Component{
@@ -76,6 +77,10 @@ class Main extends Component{
                                     <td> <b>{this.state.total} Litres</b> </td>
                                 </tr>
                         </table>
+
+                        <div style={{width: "50%", marginLeft: "25%"}}>
+                        <ProgressBar bgcolor={"blue"} completed={100 - this.state.total}/>
+                        </div>
 
                         <button onClick={this.onClick}
                          style={{backgroundColor:'#a9d5ef', color:'#0055a6', border:'none'}}>Water the Tree</button>
