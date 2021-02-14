@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		221B71A7E65CF8C7E7F6F3CA /* Pods_treehacks_WatchKit_Extension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2844C449D23DBC4D2CC9FA62 /* Pods_treehacks_WatchKit_Extension.framework */; };
+		6F12ADF1D9E4416411929500 /* Pods_treehacksTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36B6B33FE0E9A7265FD432D0 /* Pods_treehacksTests.framework */; };
+		6F8AB729B0052951A9EF8822 /* Pods_treehacks_treehacks_WatchKit_AppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AF48D76018FFB919D4A24BE /* Pods_treehacks_treehacks_WatchKit_AppUITests.framework */; };
+		77084917CD05139464CC7840 /* Pods_treehacks_WatchKit_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 081259018DBA225852532A6E /* Pods_treehacks_WatchKit_App.framework */; };
+		B44A442B9ADDBD11CCD8C2BB /* Pods_treehacks_treehacksUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F12AEE7C98BAE14D173075A2 /* Pods_treehacks_treehacksUITests.framework */; };
+		C2D3179E25D8C18700355B39 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C2D3179D25D8C18700355B39 /* GoogleService-Info.plist */; };
 		C2F378F725D8525900A0D22A /* treehacksApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2F378F625D8525900A0D22A /* treehacksApp.swift */; };
 		C2F378F925D8525900A0D22A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2F378F825D8525900A0D22A /* ContentView.swift */; };
 		C2F378FB25D8525C00A0D22A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C2F378FA25D8525C00A0D22A /* Assets.xcassets */; };
@@ -25,6 +31,8 @@
 		C2F3793725D8525F00A0D22A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C2F3793625D8525F00A0D22A /* Preview Assets.xcassets */; };
 		C2F3794325D8525F00A0D22A /* treehacks_WatchKit_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2F3794225D8525F00A0D22A /* treehacks_WatchKit_AppTests.swift */; };
 		C2F3794E25D8526000A0D22A /* treehacks_WatchKit_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2F3794D25D8526000A0D22A /* treehacks_WatchKit_AppUITests.swift */; };
+		C5B3E6D51080BC0CF7824B9F /* Pods_treehacks.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87846E9CE5233C64EEEAA093 /* Pods_treehacks.framework */; };
+		F01AAF46BD668846C644FCA8 /* Pods_treehacks_WatchKit_AppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C63E44471DD9129057E783FA /* Pods_treehacks_WatchKit_AppTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -98,6 +106,23 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		025184BEAA1C007C21E229FB /* Pods-treehacksTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-treehacksTests.release.xcconfig"; path = "Target Support Files/Pods-treehacksTests/Pods-treehacksTests.release.xcconfig"; sourceTree = "<group>"; };
+		081259018DBA225852532A6E /* Pods_treehacks_WatchKit_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_treehacks_WatchKit_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0A22A1C089D723FB59B6CE41 /* Pods-treehacks.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-treehacks.debug.xcconfig"; path = "Target Support Files/Pods-treehacks/Pods-treehacks.debug.xcconfig"; sourceTree = "<group>"; };
+		0AF48D76018FFB919D4A24BE /* Pods_treehacks_treehacks_WatchKit_AppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_treehacks_treehacks_WatchKit_AppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2844C449D23DBC4D2CC9FA62 /* Pods_treehacks_WatchKit_Extension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_treehacks_WatchKit_Extension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		298245C0DB7A683C11AA76B1 /* Pods-treehacks WatchKit AppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-treehacks WatchKit AppTests.debug.xcconfig"; path = "Target Support Files/Pods-treehacks WatchKit AppTests/Pods-treehacks WatchKit AppTests.debug.xcconfig"; sourceTree = "<group>"; };
+		36B6B33FE0E9A7265FD432D0 /* Pods_treehacksTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_treehacksTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4B952736A086010B4DF1B5B4 /* Pods-treehacks WatchKit Extension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-treehacks WatchKit Extension.debug.xcconfig"; path = "Target Support Files/Pods-treehacks WatchKit Extension/Pods-treehacks WatchKit Extension.debug.xcconfig"; sourceTree = "<group>"; };
+		4D4085456B8E331BCB038788 /* Pods-treehacks-treehacks WatchKit AppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-treehacks-treehacks WatchKit AppUITests.debug.xcconfig"; path = "Target Support Files/Pods-treehacks-treehacks WatchKit AppUITests/Pods-treehacks-treehacks WatchKit AppUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		50F0E455577A9D2E5C8295B8 /* Pods-treehacks-treehacksUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-treehacks-treehacksUITests.release.xcconfig"; path = "Target Support Files/Pods-treehacks-treehacksUITests/Pods-treehacks-treehacksUITests.release.xcconfig"; sourceTree = "<group>"; };
+		62C75124B607C838F3EC035A /* Pods-treehacks-treehacksUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-treehacks-treehacksUITests.debug.xcconfig"; path = "Target Support Files/Pods-treehacks-treehacksUITests/Pods-treehacks-treehacksUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		80AF1008C1E154870CFC68BF /* Pods-treehacks.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-treehacks.release.xcconfig"; path = "Target Support Files/Pods-treehacks/Pods-treehacks.release.xcconfig"; sourceTree = "<group>"; };
+		8430AF00884764750EC7B9F4 /* Pods-treehacks WatchKit AppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-treehacks WatchKit AppTests.release.xcconfig"; path = "Target Support Files/Pods-treehacks WatchKit AppTests/Pods-treehacks WatchKit AppTests.release.xcconfig"; sourceTree = "<group>"; };
+		8532672A68D13CCD4F5D8406 /* Pods-treehacks WatchKit App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-treehacks WatchKit App.release.xcconfig"; path = "Target Support Files/Pods-treehacks WatchKit App/Pods-treehacks WatchKit App.release.xcconfig"; sourceTree = "<group>"; };
+		87846E9CE5233C64EEEAA093 /* Pods_treehacks.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_treehacks.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B05238754F7DAB84BA765D4D /* Pods-treehacksTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-treehacksTests.debug.xcconfig"; path = "Target Support Files/Pods-treehacksTests/Pods-treehacksTests.debug.xcconfig"; sourceTree = "<group>"; };
+		C2D3179D25D8C18700355B39 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		C2F378F325D8525900A0D22A /* treehacks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = treehacks.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2F378F625D8525900A0D22A /* treehacksApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = treehacksApp.swift; sourceTree = "<group>"; };
 		C2F378F825D8525900A0D22A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -129,13 +154,27 @@
 		C2F3794925D8526000A0D22A /* treehacks WatchKit AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "treehacks WatchKit AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2F3794D25D8526000A0D22A /* treehacks_WatchKit_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = treehacks_WatchKit_AppUITests.swift; sourceTree = "<group>"; };
 		C2F3794F25D8526000A0D22A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C63E44471DD9129057E783FA /* Pods_treehacks_WatchKit_AppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_treehacks_WatchKit_AppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DB0F3D08F4753C10D45DA663 /* Pods-treehacks WatchKit Extension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-treehacks WatchKit Extension.release.xcconfig"; path = "Target Support Files/Pods-treehacks WatchKit Extension/Pods-treehacks WatchKit Extension.release.xcconfig"; sourceTree = "<group>"; };
+		E3623721BC727342EA12A7D1 /* Pods-treehacks WatchKit App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-treehacks WatchKit App.debug.xcconfig"; path = "Target Support Files/Pods-treehacks WatchKit App/Pods-treehacks WatchKit App.debug.xcconfig"; sourceTree = "<group>"; };
+		ECF87919066A02518C7A2E13 /* Pods-treehacks-treehacks WatchKit AppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-treehacks-treehacks WatchKit AppUITests.release.xcconfig"; path = "Target Support Files/Pods-treehacks-treehacks WatchKit AppUITests/Pods-treehacks-treehacks WatchKit AppUITests.release.xcconfig"; sourceTree = "<group>"; };
+		F12AEE7C98BAE14D173075A2 /* Pods_treehacks_treehacksUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_treehacks_treehacksUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		8D6BA2B07CBE000FFA8F2253 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				77084917CD05139464CC7840 /* Pods_treehacks_WatchKit_App.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C2F378F025D8525900A0D22A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C5B3E6D51080BC0CF7824B9F /* Pods_treehacks.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -143,6 +182,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6F12ADF1D9E4416411929500 /* Pods_treehacksTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -150,6 +190,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B44A442B9ADDBD11CCD8C2BB /* Pods_treehacks_treehacksUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -157,6 +198,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				221B71A7E65CF8C7E7F6F3CA /* Pods_treehacks_WatchKit_Extension.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -164,6 +206,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F01AAF46BD668846C644FCA8 /* Pods_treehacks_WatchKit_AppTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -171,12 +214,49 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6F8AB729B0052951A9EF8822 /* Pods_treehacks_treehacks_WatchKit_AppUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0CBAE3D359A3699C2FF01A9B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				87846E9CE5233C64EEEAA093 /* Pods_treehacks.framework */,
+				081259018DBA225852532A6E /* Pods_treehacks_WatchKit_App.framework */,
+				C63E44471DD9129057E783FA /* Pods_treehacks_WatchKit_AppTests.framework */,
+				2844C449D23DBC4D2CC9FA62 /* Pods_treehacks_WatchKit_Extension.framework */,
+				0AF48D76018FFB919D4A24BE /* Pods_treehacks_treehacks_WatchKit_AppUITests.framework */,
+				F12AEE7C98BAE14D173075A2 /* Pods_treehacks_treehacksUITests.framework */,
+				36B6B33FE0E9A7265FD432D0 /* Pods_treehacksTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A1BA1139B9E5C3EC5874B65B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0A22A1C089D723FB59B6CE41 /* Pods-treehacks.debug.xcconfig */,
+				80AF1008C1E154870CFC68BF /* Pods-treehacks.release.xcconfig */,
+				E3623721BC727342EA12A7D1 /* Pods-treehacks WatchKit App.debug.xcconfig */,
+				8532672A68D13CCD4F5D8406 /* Pods-treehacks WatchKit App.release.xcconfig */,
+				298245C0DB7A683C11AA76B1 /* Pods-treehacks WatchKit AppTests.debug.xcconfig */,
+				8430AF00884764750EC7B9F4 /* Pods-treehacks WatchKit AppTests.release.xcconfig */,
+				4B952736A086010B4DF1B5B4 /* Pods-treehacks WatchKit Extension.debug.xcconfig */,
+				DB0F3D08F4753C10D45DA663 /* Pods-treehacks WatchKit Extension.release.xcconfig */,
+				4D4085456B8E331BCB038788 /* Pods-treehacks-treehacks WatchKit AppUITests.debug.xcconfig */,
+				ECF87919066A02518C7A2E13 /* Pods-treehacks-treehacks WatchKit AppUITests.release.xcconfig */,
+				62C75124B607C838F3EC035A /* Pods-treehacks-treehacksUITests.debug.xcconfig */,
+				50F0E455577A9D2E5C8295B8 /* Pods-treehacks-treehacksUITests.release.xcconfig */,
+				B05238754F7DAB84BA765D4D /* Pods-treehacksTests.debug.xcconfig */,
+				025184BEAA1C007C21E229FB /* Pods-treehacksTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		C2F378EA25D8525700A0D22A = {
 			isa = PBXGroup;
 			children = (
@@ -188,6 +268,8 @@
 				C2F3794125D8525F00A0D22A /* treehacks WatchKit AppTests */,
 				C2F3794C25D8526000A0D22A /* treehacks WatchKit AppUITests */,
 				C2F378F425D8525900A0D22A /* Products */,
+				A1BA1139B9E5C3EC5874B65B /* Pods */,
+				0CBAE3D359A3699C2FF01A9B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -210,6 +292,7 @@
 			children = (
 				C2F378F625D8525900A0D22A /* treehacksApp.swift */,
 				C2F378F825D8525900A0D22A /* ContentView.swift */,
+				C2D3179D25D8C18700355B39 /* GoogleService-Info.plist */,
 				C2F378FA25D8525C00A0D22A /* Assets.xcassets */,
 				C2F378FF25D8525C00A0D22A /* Info.plist */,
 				C2F378FC25D8525C00A0D22A /* Preview Content */,
@@ -301,10 +384,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C2F3795A25D8526000A0D22A /* Build configuration list for PBXNativeTarget "treehacks" */;
 			buildPhases = (
+				D4ED5B78622E6CD68B459399 /* [CP] Check Pods Manifest.lock */,
 				C2F378EF25D8525900A0D22A /* Sources */,
 				C2F378F025D8525900A0D22A /* Frameworks */,
 				C2F378F125D8525900A0D22A /* Resources */,
 				C2F3795925D8526000A0D22A /* Embed Watch Content */,
+				EB2D983DB0D6FDE23DD465D7 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -320,6 +405,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C2F3795D25D8526000A0D22A /* Build configuration list for PBXNativeTarget "treehacksTests" */;
 			buildPhases = (
+				2155073212F3B7AEE88BA4DD /* [CP] Check Pods Manifest.lock */,
 				C2F3790025D8525C00A0D22A /* Sources */,
 				C2F3790125D8525C00A0D22A /* Frameworks */,
 				C2F3790225D8525C00A0D22A /* Resources */,
@@ -338,9 +424,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C2F3796025D8526000A0D22A /* Build configuration list for PBXNativeTarget "treehacksUITests" */;
 			buildPhases = (
+				8BA421E627C49EB6D1C95076 /* [CP] Check Pods Manifest.lock */,
 				C2F3790B25D8525C00A0D22A /* Sources */,
 				C2F3790C25D8525C00A0D22A /* Frameworks */,
 				C2F3790D25D8525C00A0D22A /* Resources */,
+				BFE473C4B465A474FDF6484E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -356,8 +444,10 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C2F3795625D8526000A0D22A /* Build configuration list for PBXNativeTarget "treehacks WatchKit App" */;
 			buildPhases = (
+				468BCAFEC3CF5AB087410AD4 /* [CP] Check Pods Manifest.lock */,
 				C2F3791625D8525C00A0D22A /* Resources */,
 				C2F3795525D8526000A0D22A /* Embed App Extensions */,
+				8D6BA2B07CBE000FFA8F2253 /* Frameworks */,
 			);
 			buildRules = (
 			);
@@ -373,6 +463,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C2F3795225D8526000A0D22A /* Build configuration list for PBXNativeTarget "treehacks WatchKit Extension" */;
 			buildPhases = (
+				5741D7ADA752F41E54AB8203 /* [CP] Check Pods Manifest.lock */,
 				C2F3792025D8525E00A0D22A /* Sources */,
 				C2F3792125D8525E00A0D22A /* Frameworks */,
 				C2F3792225D8525E00A0D22A /* Resources */,
@@ -390,6 +481,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C2F3796325D8526000A0D22A /* Build configuration list for PBXNativeTarget "treehacks WatchKit AppTests" */;
 			buildPhases = (
+				95ADDF9A39EE0758550C8B53 /* [CP] Check Pods Manifest.lock */,
 				C2F3793A25D8525F00A0D22A /* Sources */,
 				C2F3793B25D8525F00A0D22A /* Frameworks */,
 				C2F3793C25D8525F00A0D22A /* Resources */,
@@ -408,9 +500,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C2F3796625D8526000A0D22A /* Build configuration list for PBXNativeTarget "treehacks WatchKit AppUITests" */;
 			buildPhases = (
+				E10E71C49BCB6EF4EAB3F4ED /* [CP] Check Pods Manifest.lock */,
 				C2F3794525D8526000A0D22A /* Sources */,
 				C2F3794625D8526000A0D22A /* Frameworks */,
 				C2F3794725D8526000A0D22A /* Resources */,
+				D2D933F47D9AA4A4A0284F16 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -489,6 +583,7 @@
 			files = (
 				C2F378FE25D8525C00A0D22A /* Preview Assets.xcassets in Resources */,
 				C2F378FB25D8525C00A0D22A /* Assets.xcassets in Resources */,
+				C2D3179E25D8C18700355B39 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -538,6 +633,214 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2155073212F3B7AEE88BA4DD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-treehacksTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		468BCAFEC3CF5AB087410AD4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-treehacks WatchKit App-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5741D7ADA752F41E54AB8203 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-treehacks WatchKit Extension-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8BA421E627C49EB6D1C95076 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-treehacks-treehacksUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		95ADDF9A39EE0758550C8B53 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-treehacks WatchKit AppTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BFE473C4B465A474FDF6484E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-treehacks-treehacksUITests/Pods-treehacks-treehacksUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-treehacks-treehacksUITests/Pods-treehacks-treehacksUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-treehacks-treehacksUITests/Pods-treehacks-treehacksUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D2D933F47D9AA4A4A0284F16 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-treehacks-treehacks WatchKit AppUITests/Pods-treehacks-treehacks WatchKit AppUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-treehacks-treehacks WatchKit AppUITests/Pods-treehacks-treehacks WatchKit AppUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-treehacks-treehacks WatchKit AppUITests/Pods-treehacks-treehacks WatchKit AppUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D4ED5B78622E6CD68B459399 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-treehacks-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E10E71C49BCB6EF4EAB3F4ED /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-treehacks-treehacks WatchKit AppUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EB2D983DB0D6FDE23DD465D7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-treehacks/Pods-treehacks-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-treehacks/Pods-treehacks-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-treehacks/Pods-treehacks-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		C2F378EF25D8525900A0D22A /* Sources */ = {
@@ -742,6 +1045,7 @@
 		};
 		C2F3795325D8526000A0D22A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4B952736A086010B4DF1B5B4 /* Pods-treehacks WatchKit Extension.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				CODE_SIGN_STYLE = Automatic;
@@ -766,6 +1070,7 @@
 		};
 		C2F3795425D8526000A0D22A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DB0F3D08F4753C10D45DA663 /* Pods-treehacks WatchKit Extension.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				CODE_SIGN_STYLE = Automatic;
@@ -791,6 +1096,7 @@
 		};
 		C2F3795725D8526000A0D22A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E3623721BC727342EA12A7D1 /* Pods-treehacks WatchKit App.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -811,6 +1117,7 @@
 		};
 		C2F3795825D8526000A0D22A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8532672A68D13CCD4F5D8406 /* Pods-treehacks WatchKit App.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -832,6 +1139,7 @@
 		};
 		C2F3795B25D8526000A0D22A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0A22A1C089D723FB59B6CE41 /* Pods-treehacks.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -855,6 +1163,7 @@
 		};
 		C2F3795C25D8526000A0D22A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 80AF1008C1E154870CFC68BF /* Pods-treehacks.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -879,6 +1188,7 @@
 		};
 		C2F3795E25D8526000A0D22A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B05238754F7DAB84BA765D4D /* Pods-treehacksTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -902,6 +1212,7 @@
 		};
 		C2F3795F25D8526000A0D22A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 025184BEAA1C007C21E229FB /* Pods-treehacksTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -926,6 +1237,7 @@
 		};
 		C2F3796125D8526000A0D22A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 62C75124B607C838F3EC035A /* Pods-treehacks-treehacksUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -948,6 +1260,7 @@
 		};
 		C2F3796225D8526000A0D22A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 50F0E455577A9D2E5C8295B8 /* Pods-treehacks-treehacksUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -971,6 +1284,7 @@
 		};
 		C2F3796425D8526000A0D22A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 298245C0DB7A683C11AA76B1 /* Pods-treehacks WatchKit AppTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -994,6 +1308,7 @@
 		};
 		C2F3796525D8526000A0D22A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8430AF00884764750EC7B9F4 /* Pods-treehacks WatchKit AppTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -1018,6 +1333,7 @@
 		};
 		C2F3796725D8526000A0D22A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4D4085456B8E331BCB038788 /* Pods-treehacks-treehacks WatchKit AppUITests.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8G5W5G9579;
@@ -1039,6 +1355,7 @@
 		};
 		C2F3796825D8526000A0D22A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ECF87919066A02518C7A2E13 /* Pods-treehacks-treehacks WatchKit AppUITests.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8G5W5G9579;

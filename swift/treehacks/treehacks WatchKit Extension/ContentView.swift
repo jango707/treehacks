@@ -6,19 +6,7 @@
 //
 
 import SwiftUI
-
-//struct ContentView: View {
-//    var body: some View {
-//        Text("Hello, World!")
-//            .padding()
-//    }
-//}
-//
-//struct ContentView_Previews: PreviewProvider {
-//    static var previews: some View {
-//        ContentView()
-//    }
-//}
+import UIKit
 
 struct ContentView: View {
     // Observe changes to the flash card model and update the topic list accordingly.
@@ -37,7 +25,7 @@ struct ContentView: View {
             .onDelete { self.model.deleteTopic(at: $0) }
         }
         .listStyle(CarouselListStyle())
-        .navigationBarTitle(Text("treeHacks"))
+        .navigationBarTitle(Text("waterWatch"))
     }
 }
 
@@ -60,6 +48,7 @@ struct Topic: Identifiable {
     let title: String
     let emoji: String
     let color: UIColor
+    let message: String
 
     var cards: [Card]
 
@@ -69,88 +58,81 @@ struct Topic: Identifiable {
 }
 
 struct Card: Codable {
-    let question: String
-    let answer: String
+//    let question: String
+//    let answer: String
+    let button: String
 }
 
 class FlashCardModel: ObservableObject {
     /// An array of topics that the user is currently studying.
     @Published var topics: [Topic] = [
-        Topic(title: "Bucket",
-              emoji: "🪣",
+        Topic(title: "Trees",
+              emoji: "🌳",
               color: #colorLiteral(red: 0.0 / 255.0, green: 191.0 / 255.0,
                                    blue: 255.0 / 255.0, alpha: 0.9),
+              message:"🌳x...trees",
               cards: [
-                Card(question: "Question 1", answer: "Answer"),
-                Card(question: "Question 2", answer: "Answer"),
-                Card(question: "Question 3", answer: "Answer"),
-                Card(question: "Question 4", answer: "Answer"),
-                Card(question: "Question 5", answer: "Answer"),
-                Card(question: "Question 6", answer: "Answer")
+                Card(button: "press") //TODO: replace ... with db value
             ]
         ),
         Topic(title: "Shower",
               emoji: "🚿",
               color: #colorLiteral(red: 19.0 / 255.0, green: 89.0 / 255.0,
-                                   blue: 150 / 255.0, alpha: 0.9),
+                                   blue: 150.0 / 255.0, alpha: 0.9),
+              message:"🚿x...mins",
               cards: [
-                Card(question: "Question 1", answer: "Answer"),
-                Card(question: "Question 2", answer: "Answer"),
-                Card(question: "Question 3", answer: "Answer"),
-                Card(question: "Question 4", answer: "Answer"),
-                Card(question: "Question 5", answer: "Answer")
+                Card(button: "Start Shower")
+//                Card(question: "Question 1", answer: "Answer", button: "press")
             ]
         ),
         Topic(title: "Washing Hands",
               emoji: "🧼",
-              color: #colorLiteral(red: 153.0 / 255.0, green: 89.0 / 255.0,
-                                   blue: 0.0, alpha: 1.0),
+              color: #colorLiteral(red: 25.0 / 255.0, green: 25.0 / 255.0,
+                                   blue: 112.0 / 255.0, alpha: 0.9),
+              message:"🧼x...mins",
               cards: [
-                Card(question: "Question 1", answer: "Answer"),
-                Card(question: "Question 2", answer: "Answer"),
-                Card(question: "Question 3", answer: "Answer"),
-                Card(question: "Question 4", answer: "Answer"),
-                Card(question: "Question 5", answer: "Answer"),
-                Card(question: "Question 6", answer: "Answer"),
-                Card(question: "Question 7", answer: "Answer")
+                Card(button: "Start Washing")
+//                Card(question: "Question 1", answer: "Answer", button: "press")
             ]
         ),
         Topic(title: "Flushing",
               emoji: "🚽",
-              color: #colorLiteral(red: 2.0 / 255.0, green: 133.0 / 255.0,
-                                   blue: 68.0 / 255.0, alpha: 1.0),
+              color: #colorLiteral(red: 30.0 / 255.0, green: 90.0 / 255.0,
+                                   blue: 112.0 / 255.0, alpha: 0.9),
+              message:"🚽x...times",
               cards: [
-                Card(question: "Question 1", answer: "Answer"),
-                Card(question: "Question 2", answer: "Answer"),
-                Card(question: "Question 3", answer: "Answer")
+                Card(button: "Add a Flush")
+//                Card(question: "Question 1", answer: "Answer", button: "press")
             ]
         ),
         Topic(title: "Washing Dishes",
-              emoji: "👩🏻‍⚖️",
-              color: #colorLiteral(red: 0.0, green: 147.0 / 255.0,
-                                   blue: 140.0 / 255.0, alpha: 1.0),
+              emoji: "🧽",
+              color: #colorLiteral(red: 0.0, green: 120.0 / 255.0,
+                                   blue: 140.0 / 255.0, alpha: 0.9),
+              message:"🧽x...mins",
               cards: [
-                Card(question: "Question 1", answer: "Answer"),
-                Card(question: "Question 2", answer: "Answer"),
-                Card(question: "Question 3", answer: "Answer"),
-                Card(question: "Question 4", answer: "Answer"),
-                Card(question: "Question 5", answer: "Answer"),
-                Card(question: "Question 6", answer: "Answer"),
-                Card(question: "Question 7", answer: "Answer")
+                Card(button: "Start Washing Dishes")
+//                Card(question: "Question 1", answer: "Answer", button: "press")
             ]
         ),
         Topic(title: "Dish Washer",
-              emoji: "🎨",
+              emoji: "🍽️",
               color: #colorLiteral(red: 19.0 / 255.0, green: 89.0 / 255.0,
-                                   blue: 150 / 255.0, alpha: 1.0),
+                                   blue: 150 / 255.0, alpha: 0.9),
+              message:"🍽️x...times",
               cards: [
-                Card(question: "Question 1", answer: "Answer"),
-                Card(question: "Question 2", answer: "Answer"),
-                Card(question: "Question 3", answer: "Answer"),
-                Card(question: "Question 4", answer: "Answer"),
-                Card(question: "Question 5", answer: "Answer"),
-                Card(question: "Question 6", answer: "Answer"),
-                Card(question: "Question 7", answer: "Answer")
+                Card(button: "Add Dish Washer")
+//                Card(question: "Question 1", answer: "Answer", button: "press")
+            ]
+        ),
+        Topic(title: "Washer Machine",
+              emoji: "🧺",
+              color: #colorLiteral(red: 70.0 / 255.0, green: 100.0 / 255.0,
+                                   blue: 80.0 / 255.0, alpha: 0.9),
+              message:"🧺x...times",
+              cards: [
+                Card(button: "Add Dish Washing")
+//                Card(question: "Question 1", answer: "Answer", button: "press")
             ]
         )
     ]
@@ -175,13 +157,14 @@ class FlashCardModel: ObservableObject {
 
 extension Card {
     /// A sample card used in the preview.
-    static let previewCard = Card(question: "6 × 7", answer: "42")
+//    static let previewCard = Card(question: "6 × 7", answer: "42", button: "pressMe")
+    static let previewCard = Card(button: "pressMe")
 }
 
 extension Topic {
     /// A sample topic used in the preview.
-    static let previewTopic = Topic(title: "Math", emoji: "🧮",
-        color: .white, cards: [Card.previewCard, Card.previewCard, Card.previewCard])
+    static let previewTopic = Topic(title: "Trees", emoji: "🌳",
+                                    color: .white, message:"how many trees?", cards: [Card.previewCard, Card.previewCard, Card.previewCard])
 }
 
 
@@ -231,14 +214,19 @@ struct FlashCard: View {
      gestures and animations.
      */
     var body: some View {
-        FlipView(
-            Side {
-                Text(card.question)
-            },
-            Side {
-                Text(card.answer)
-            }
-        )
+//        FlipView(
+//            Side {
+//                Text(card.question)
+//            },
+//            Side {
+//                Text(card.answer)
+//            }
+//        )
+        Button(action: {
+            // TODO: What to perform ACTION NEEDED TO ADD
+        }) {
+            Text(card.button)
+        }
     }
 }
 
@@ -350,7 +338,7 @@ struct CardList: View {
 
     var body: some View {
         VStack {
-            Text("Ready? Let's review!")
+            Text(topic.message)
                 .multilineTextAlignment(.center)
                 .font(.headline)
             Divider()
@@ -478,7 +466,7 @@ struct TopicList: View {
             .onDelete { self.model.deleteTopic(at: $0) }
         }
         .listStyle(CarouselListStyle())
-        .navigationBarTitle(Text("Pop Quiz!"))
+        .navigationBarTitle(Text("waterWatch"))
     }
 }
 

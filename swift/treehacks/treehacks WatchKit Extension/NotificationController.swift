@@ -23,7 +23,8 @@ class NotificationController: WKUserNotificationHostingController<NotificationVi
         }
 
         // Create a Card from the information in the notification.
-        card = Card(question: cardInfo["question"]!, answer: cardInfo["answer"]!)
+//        card = Card(question: cardInfo["question"]!, answer: cardInfo["answer"]!, button: cardInfo["button"]!)
+        card = Card(button: cardInfo["button"]!)
 
         notificationActions = [
             UNNotificationAction(identifier: "correct", title: "Correct", options: []),
