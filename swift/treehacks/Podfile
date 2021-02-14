@@ -1,0 +1,59 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'treehacks' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for treehacks
+  # add the Firebase pod for Google Analytics
+    pod 'Firebase'
+    pod 'Firebase/Analytics'
+    pod 'Firebase/Database'
+    # add pods for any other desired Firebase products
+    # https://firebase.google.com/docs/ios/setup#available-pods
+
+  target 'treehacks WatchKit AppTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'treehacks WatchKit AppUITests' do
+    # Pods for testing
+  end
+
+  target 'treehacksTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'treehacksUITests' do
+    # Pods for testing
+  end
+
+end
+
+target 'treehacks WatchKit App' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for treehacks WatchKit App
+
+     # target 'treehacks WatchKit AppTests' do
+      #  inherit! :search_paths
+    # Pods for testing
+     # end
+
+     # target 'treehacks WatchKit AppUITests' do
+    # Pods for testing
+     # end
+
+end
+
+target 'treehacks WatchKit Extension' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for treehacks WatchKit Extension
+
+end
