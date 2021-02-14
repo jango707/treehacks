@@ -79,7 +79,7 @@ class Main extends Component{
                         </table>
 
                         <div style={{width: "50%", marginLeft: "25%"}}>
-                        <ProgressBar bgcolor={"blue"} completed={100 - this.state.total}/>
+                            <ProgressBar bgcolor={"#0055a6"} completed={100 - this.state.total}/>
                         </div>
 
                         <button onClick={this.onClick}
@@ -92,6 +92,13 @@ class Main extends Component{
                 <img src={treeGIF} alt="Tree"/>
                 <img src="https://image.shutterstock.com/image-vector/clipart-style-cartoon-bucket-600w-34869622.jpg" 
                 width='400px' alt="bucket"/>
+
+                <section>
+                    <div className="wave wave1"></div>
+                    <div className="wave wave2"></div>
+                    <div className="wave wave3"></div> 
+                    <div className="wave wave4"></div>
+                </section>
             </div>
             )
         }
