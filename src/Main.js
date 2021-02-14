@@ -21,6 +21,7 @@ class Main extends Component{
             snap: null,
             loaded:false,
             total: 0,
+            added: 0,
             displayTimer: false,
             displaySuc: false,
             numTree:0,
@@ -68,6 +69,9 @@ class Main extends Component{
     }
 
     onClick(){
+        this.setState({
+            added: this.state.total
+        })
         
         if(this.state.total !== 0){
         const waterRef = firebase.database().ref('water');
@@ -80,14 +84,14 @@ class Main extends Component{
             treeRef.update({count: this.state.numTree+1});
 
         }
-        treeRef.update({progress: current})
-        waterRef.update({dishes:0, dishwasher:0, hands:0, shower:0, flush:0, washingmachine:0});
-
+        
         this.setState({
             displaySuc:true,
             displayTimer:false
         })
         
+        treeRef.update({progress: current})
+        waterRef.update({dishes:0, dishwasher:0, hands:0, shower:0, flush:0, washingmachine:0});
 
     }else{
             this.setState({
@@ -130,7 +134,7 @@ class Main extends Component{
                                 </tr>
                                 <tr>
                                     <td > daily goal</td>
-                                    <td>  less than 150 Litres </td>
+                                    <td>  150 Litres </td>
                                 </tr>
                                 <tr>
                                     <td >Bucket volume</td>
@@ -143,7 +147,7 @@ class Main extends Component{
                         <button onClick={this.onClick}
                          style={{backgroundColor:'#a9d5ef', color:'#0055a6', border:'none', width:'500px'}}>Water the Tree
                          </button>
-                         {this.state.displayTimer && <p style={{color:'red', fontSize:'20px'}}>You already have watered your tree for today. Come back tomorrow!</p>} {this.state.displaySuc && <p style={{color:'#49a144', fontSize:'20px'}}>You have watered your tree. Congrats, your tree has grown by {100 - (this.state.total/200)*100} %</p>}
+                         {this.state.displayTimer && <p style={{color:'red', fontSize:'20px'}}>You already have watered your tree for today. Come back tomorrow!</p>} {this.state.displaySuc && <p style={{color:'#49a144', fontSize:'20px'}}>You have watered your tree. Congrats, your tree has grown by {100 - (this.state.added/200)*100} %</p>}
 
                         <h3>Current progress on tree:</h3>
                         <div style={{width: "50%", marginLeft: "23%"}}>
