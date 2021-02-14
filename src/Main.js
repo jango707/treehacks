@@ -3,6 +3,7 @@ import treeGIF from './pics/tree.gif';
 import firebase from './util/firebase';
 import './main.css';
 import ProgressBar from "./progress-bar.component"
+import LiquidFillGauge from 'react-liquid-gauge';
 
 
 class Main extends Component{
@@ -97,8 +98,18 @@ class Main extends Component{
                          </button>
 
                          <h3>Bucket state:</h3>
-                        <div style={{width: "50%", marginLeft: "23%"}}>
-                            <ProgressBar bgcolor={"#0055a6"} completed={100 - this.state.total}/>
+                        <div style={{width: "50%", marginLeft: "25%"}}>
+                            {/* <ProgressBar bgcolor={"#0055a6"} completed={100 - this.state.total}/> */}
+                            <LiquidFillGauge 
+                                style={{ margin: '0 auto' }}
+                                value={100 - this.state.total}
+                                percent="%"
+                                riseAnimation
+                                waveAnimation
+                                waveFrequency={2}
+                                waveAmplitude={1}
+                                gradient
+                            />
                         </div>
 
                         <h3>Current progress on tree:</h3>
