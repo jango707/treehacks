@@ -77,20 +77,20 @@ class Main extends Component{
         const waterRef = firebase.database().ref('water');
         const treeRef = firebase.database().ref('tree');   
 
-        var current = this.state.progressTree + 100 - this.state.total;
+        var current = this.state.progressTree + 100 - (this.state.total/200)*100;
         
         if (current >= 100){
             current = current-100;
             treeRef.update({count: this.state.numTree+1});
-
         }
         
         this.setState({
             displaySuc:true,
-            displayTimer:false
+            displayTimer:false,
+            progressTree:current
         })
         
-        treeRef.update({progress: current})
+        treeRef.update({progress: Math.max( 0, Math.min(current, 100) )})
         waterRef.update({dishes:0, dishwasher:0, hands:0, shower:0, flush:0, washingmachine:0});
 
     }else{
@@ -147,7 +147,7 @@ class Main extends Component{
                         <button onClick={this.onClick}
                          style={{backgroundColor:'#a9d5ef', color:'#0055a6', border:'none', width:'500px'}}>Water the Tree
                          </button>
-                         {this.state.displayTimer && <p style={{color:'red', fontSize:'20px'}}>You already have watered your tree for today. Come back tomorrow!</p>} {this.state.displaySuc && <p style={{color:'#49a144', fontSize:'20px'}}>You have watered your tree. Congrats, your tree has grown by {100 - (this.state.added/200)*100} %</p>}
+                         {this.state.displayTimer && <p style={{color:'red', fontSize:'20px'}}>You already have watered your tree for today. Come back tomorrow!</p>} {this.state.displaySuc && <p style={{color:'#49a144', fontSize:'20px'}}>You have watered your tree. Congrats, your tree has grown by {Math.max( 0, Math.min(100 - (this.state.added/200)*100, 100) )} %</p>}
 
                         <h3>Current progress on tree:</h3>
                         <div style={{width: "50%", marginLeft: "23%"}}>
