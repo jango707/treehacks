@@ -7,20 +7,20 @@ target 'treehacks' do
 
   # Pods for treehacks
   # add the Firebase pod for Google Analytics
-    pod 'Firebase'
+    # pod 'Firebase'
     pod 'Firebase/Analytics'
     pod 'Firebase/Database'
     # add pods for any other desired Firebase products
     # https://firebase.google.com/docs/ios/setup#available-pods
 
-  target 'treehacks WatchKit AppTests' do
-    inherit! :search_paths
-    # Pods for testing
-  end
+#  target 'treehacks WatchKit AppTests' do
+#    inherit! :search_paths
+#    # Pods for testing
+#  end
 
-  target 'treehacks WatchKit AppUITests' do
-    # Pods for testing
-  end
+#  target 'treehacks WatchKit AppUITests' do
+#    # Pods for testing
+#  end
 
   target 'treehacksTests' do
     inherit! :search_paths
@@ -38,15 +38,14 @@ target 'treehacks WatchKit App' do
   use_frameworks!
 
   # Pods for treehacks WatchKit App
-
-     # target 'treehacks WatchKit AppTests' do
-      #  inherit! :search_paths
+  target 'treehacks WatchKit AppTests' do
+    inherit! :search_paths
     # Pods for testing
-     # end
-
-     # target 'treehacks WatchKit AppUITests' do
+  end
+  
+  target 'treehacks WatchKit AppUITests' do
     # Pods for testing
-     # end
+  end
 
 end
 

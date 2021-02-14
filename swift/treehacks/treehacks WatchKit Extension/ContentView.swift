@@ -9,6 +9,7 @@ import SwiftUI
 import UIKit
 
 struct ContentView: View {
+    
     // Observe changes to the flash card model and update the topic list accordingly.
     @ObservedObject var model: FlashCardModel
 
@@ -25,7 +26,7 @@ struct ContentView: View {
             .onDelete { self.model.deleteTopic(at: $0) }
         }
         .listStyle(CarouselListStyle())
-        .navigationBarTitle(Text("waterWatch"))
+        .navigationBarTitle(Text("WaterWatch"))
     }
 }
 
@@ -55,8 +56,16 @@ struct Topic: Identifiable {
     var id: String {
         title
     }
+    var outside: String
 }
-
+struct vars {
+    static var flushes:Int=3
+    static var dishes:Int=20
+    static var dishwasher:Int=0
+    static var washingmachine:Int=1
+    static var hands:Int=12
+    static var shower:Int=25
+}
 struct Card: Codable {
 //    let question: String
 //    let answer: String
@@ -64,76 +73,92 @@ struct Card: Codable {
 }
 
 class FlashCardModel: ObservableObject {
+    var flushes = vars.flushes
+    var dishes = vars.dishes
+    var dishwasher = vars.dishwasher
+    var washingmachine = vars.washingmachine
+    var hands = vars.hands
+    var shower = vars.shower
+    
+    
     /// An array of topics that the user is currently studying.
-    @Published var topics: [Topic] = [
+    lazy var topics: [Topic] = [
         Topic(title: "Trees",
               emoji: "🌳",
               color: #colorLiteral(red: 0.0 / 255.0, green: 191.0 / 255.0,
                                    blue: 255.0 / 255.0, alpha: 0.9),
-              message:"🌳x...trees",
+              message:" 21 🌳 planted",
               cards: [
-                Card(button: "press") //TODO: replace ... with db value
-            ]
+                 //TODO: replace ... with db value
+            ],
+              outside: "Click to view"
         ),
         Topic(title: "Shower",
               emoji: "🚿",
               color: #colorLiteral(red: 19.0 / 255.0, green: 89.0 / 255.0,
                                    blue: 150.0 / 255.0, alpha: 0.9),
-              message:"🚿x...mins",
+              message:"🚿 \(shower) minutes",
               cards: [
                 Card(button: "Start Shower")
 //                Card(question: "Question 1", answer: "Answer", button: "press")
-            ]
+            ],
+              outside: "Click to shower"
         ),
         Topic(title: "Washing Hands",
               emoji: "🧼",
               color: #colorLiteral(red: 25.0 / 255.0, green: 25.0 / 255.0,
                                    blue: 112.0 / 255.0, alpha: 0.9),
-              message:"🧼x...mins",
+              message:"🧼 \(hands) minutes",
               cards: [
                 Card(button: "Start Washing")
 //                Card(question: "Question 1", answer: "Answer", button: "press")
-            ]
+            ],
+              outside: "Click to wash hands"
         ),
         Topic(title: "Flushing",
               emoji: "🚽",
               color: #colorLiteral(red: 30.0 / 255.0, green: 90.0 / 255.0,
                                    blue: 112.0 / 255.0, alpha: 0.9),
-              message:"🚽x...times",
+              message:"🚽 \(flushes) flushes",
               cards: [
                 Card(button: "Add a Flush")
 //                Card(question: "Question 1", answer: "Answer", button: "press")
-            ]
+               
+            ],
+              outside: "Click to flush"
         ),
         Topic(title: "Washing Dishes",
               emoji: "🧽",
               color: #colorLiteral(red: 0.0, green: 120.0 / 255.0,
                                    blue: 140.0 / 255.0, alpha: 0.9),
-              message:"🧽x...mins",
+              message:"🧽 \(dishes) minutes",
               cards: [
                 Card(button: "Start Washing Dishes")
 //                Card(question: "Question 1", answer: "Answer", button: "press")
-            ]
+            ],
+              outside: "Click to wash dishes by hand"
         ),
         Topic(title: "Dish Washer",
               emoji: "🍽️",
               color: #colorLiteral(red: 19.0 / 255.0, green: 89.0 / 255.0,
                                    blue: 150 / 255.0, alpha: 0.9),
-              message:"🍽️x...times",
+              message:"🍽️ \(dishwasher) times",
               cards: [
                 Card(button: "Add Dish Washer")
 //                Card(question: "Question 1", answer: "Answer", button: "press")
-            ]
+            ],
+              outside: "Click to use the dishwasher"
         ),
-        Topic(title: "Washer Machine",
+        Topic(title: "Washing Machine",
               emoji: "🧺",
               color: #colorLiteral(red: 70.0 / 255.0, green: 100.0 / 255.0,
                                    blue: 80.0 / 255.0, alpha: 0.9),
-              message:"🧺x...times",
+              message:"🧺 \(washingmachine) times",
               cards: [
                 Card(button: "Add Dish Washing")
 //                Card(question: "Question 1", answer: "Answer", button: "press")
-            ]
+            ],
+              outside: "Click to use washing machine"
         )
     ]
 
@@ -164,7 +189,7 @@ extension Card {
 extension Topic {
     /// A sample topic used in the preview.
     static let previewTopic = Topic(title: "Trees", emoji: "🌳",
-                                    color: .white, message:"how many trees?", cards: [Card.previewCard, Card.previewCard, Card.previewCard])
+                                    color: .white, message:"how many trees?", cards: [Card.previewCard, Card.previewCard, Card.previewCard], outside: "click to view")
 }
 
 
@@ -224,6 +249,7 @@ struct FlashCard: View {
 //        )
         Button(action: {
             // TODO: What to perform ACTION NEEDED TO ADD
+            vars.flushes = 1
         }) {
             Text(card.button)
         }
@@ -480,7 +506,7 @@ struct TopicCell: View {
             VStack(alignment: .leading) {
                 Text(topic.title)
                     .font(.system(.headline, design: .rounded))
-                Text("\(topic.cards.count) cards")
+                Text(topic.outside)
             }
         }
     }
