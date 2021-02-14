@@ -13,36 +13,49 @@ class Main extends Component{
             snap: null,
             loaded:false,
             total: 0,
-            displayTimer: false
+            displayTimer: false,
+            numTree:0,
+            progressTree:0
         }
         this.onClick = this.onClick.bind(this);
     }
 
     componentDidMount(){
-        const todoRef = firebase.database().ref('water');       
+        const waterRef = firebase.database().ref('water');       
+        const treeRef = firebase.database().ref('tree');       
 
-        //todoRef.push(todo);
-        todoRef.on('value', (snapshot) => {
+        waterRef.on('value', (snapshot) => {
             const snaps = snapshot.val();
-            console.log(snaps);
             var t = 0;
             Object.keys(snaps).map((item, index) => {
                 t+= snaps[item];
             })
             this.setState({
+                snap: snaps,
                 total: t
             })
+        })
+        treeRef.on('value', (snapshot) => {
+            const snaps = snapshot.val();
+            console.log(snaps);
             this.setState({
-                snap: snaps,
-                loaded: true
+                numTree: snaps.count,
+                progressTree: snaps.progress,
+                loaded:true
             })
         })
     }
 
     onClick(){
-        this.setState({
-            displayTimer:true
-        })
+        const waterRef = firebase.database().ref('water');
+        
+        waterRef.update({dishes:0, dishwasher:0, hands:0, shower:0, washingmachine:0});
+
+        if(this.state.total === 0){
+            this.setState({
+                displayTimer:true
+            })
+        }
     }
 
     render(){
@@ -78,20 +91,29 @@ class Main extends Component{
                                 </tr>
                         </table>
 
-                        <div style={{width: "50%", marginLeft: "25%"}}>
+
+                        <button onClick={this.onClick}
+                         style={{backgroundColor:'#a9d5ef', color:'#0055a6', border:'none', width:'500px'}}>Water the Tree
+                         </button>
+
+                         <h3>Bucket state:</h3>
+                        <div style={{width: "50%", marginLeft: "23%"}}>
                             <ProgressBar bgcolor={"#0055a6"} completed={100 - this.state.total}/>
                         </div>
 
-                        <button onClick={this.onClick}
-                         style={{backgroundColor:'#a9d5ef', color:'#0055a6', border:'none'}}>Water the Tree</button>
+                        <h3>Current progress on tree:</h3>
+                        <div style={{width: "50%", marginLeft: "23%"}}>
+                            <ProgressBar bgcolor={"#49a144"} completed={this.state.progressTree}/>
+                        </div>
+
+                        <h3>Number of trees: <b style={{color:'#49a144'}}>{this.state.numTree}</b></h3>
+
 
                          {this.state.displayTimer && <p style={{color:'red', fontSize:'20px'}}>Bucket will be full again tomorrow night</p>}
 
+                <img src={treeGIF} alt="Tree"/>
                 </div>  
                 
-                <img src={treeGIF} alt="Tree"/>
-                <img src="https://image.shutterstock.com/image-vector/clipart-style-cartoon-bucket-600w-34869622.jpg" 
-                width='400px' alt="bucket"/>
 
                 <section>
                     <div className="wave wave1"></div>
